@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZTUR - RENT A CAR</title>
+    <link rel="stylesheet" href="doc-css/style.css">
+    <link rel="stylesheet" href="doc-css/mobille.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- ower carsel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- fancybox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<body>
+
+    <header>
+        <div class="slayd">
+
+            <!-- Swiper -->
+
+            <div class="swiper headerSwiper">
+                <div class="swiper-wrapper">
+                    <div data-hash="slide1" class="swiper-slide"> <img src="./photo/car/slide1.png" alt="">
+                        <div class="text">
+                            <h3>
+                                AZTUR Travel ve Renta Car
+                            </h3>
+                            <p>Hər növ avtomobilin icarəsi</p>
+                        </div>
+                    </div>
+                    <div data-hash="slide2" class="swiper-slide"> <img src="./photo/car/slide2.png" alt="">
+                        <div class="text">
+                            <h3>
+                                AZTUR Travel ve Renta Car
+                            </h3>
+                            <p>Hər növ avtomobilin icarəsi</p>
+                        </div>
+                    </div>
+                    <div data-hash="slide3" class="swiper-slide"> <img src="./photo/car/slide3.png" alt="">
+                        <div class="text">
+                            <h3>
+                                AZTUR Travel ve Renta Car
+                            </h3>
+                            <p>Hər növ avtomobilin icarəsi</p>
+                        </div>
+                    </div>
+                   
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </header>
+    <nav class="nav" id="nav">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 left">
+                        <a href="index.html">
+                            <img class="img-fluid" src="./photo/icon/aztur logo 1080 ağ.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-10 right">
+
+                        <div class="top">
+                            <a id="logo" style=" display:none;" href="">
+                                <img style="max-width:50px;" class="img-fluid" src="./photo/icon/aztur logo 1080 ağ.png"
+                                    alt="">
+                            </a>
+                            <div class="social">
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+
+                                </ul>
+                            </div>
+
+                            <form class="example" id="form" action="" style="display: block;">
+                                <input type="text" placeholder="Axtar.." name="search">
+
+                            </form>
+                            <div class="toggle-button"> <button id="toggle"><i class="fa-solid fa-bars"></i></button>
+                            </div>
+                        </div>
+                        <div class="cartoon"></div>
+                        <div class="bottom">
+
+                            <ul id="menu">
+
+                                <li class="main"><a href="About.html">Haqqımızda</a></li>
+                                <li class="main"><a href="blogs.html">Bloglar</a></li>
+                                <li class="main"><a href="services.html">Xidmətlər</a></li>
+                                <li class="main"><a href="turs.html">Turlar</a></li>
+                                <li class="main"><a href="aboutthecar.html">Avtomobilər</a></li>
+                                <li class="main"><a href="Car.html">Rent a car</a></li>
+                                <li class="main"><a href="contact.html">Əlaqə</a></li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-mobille">
+        <div class="navbar">
+            <div class="container-fluid nav-cont">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="img-fluid" src="./photo/icon/aztur logo 1080 ağ.png" alt="">
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <li>
+                        <form class="example" id="form" action="" style="display: block;">
+                            <input type="text" placeholder="Axtar.." name="search">
+                    </li>
+                    <li class=""><a href="About.html">Haqqımızda</a></li>
+                    <li class=""><a href="blogs.html">Bloglar</a></li>
+                    <li class=""><a href="services.html">Xidmətlər</a></li>
+                    <li class=""><a href="turs.html">Turlar</a></li>
+                    <li class=""><a href="aboutthecar.html">Avtomobilər</a></li>
+                    <li class=""><a href="Car.html">Rent a car</a></li>
+                    <li class=""><a href="contact.html">Əlaqə</a></li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services" id="services">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="header-text">
+                    <h2>Xidmətlər</h2>
+                    <p>Lorem ipsum dolor sit amet elit.</p>
+                </div>
+                <div class="services-big-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                            <a href="">    <div class="services-box">
+                               
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-hotel"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>HOTELLƏR</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor
+                                            non nostrum officiis, a ipsum sit modi, dolorum delectus beatae porro eius
+                                        </p>
+                                    </div>
+                              
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                            <a href="">
+                                <div class="services-box">
+
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-ticket"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>AVİABİLETLƏR</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                                            dolor non nostrum officiis, a ipsum sit modi, dolorum delectus beatae
+                                            porro eius </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                            <a href="">
+                                <div class="services-box">
+
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-plane-departure"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>UÇUŞLAR</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor
+                                            non nostrum officiis, a ipsum sit modi, dolorum delectus beatae porro eius
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                            <a href="">
+                                <div class="services-box">
+
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-map-location-dot"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>XARİCİ VƏ DAXİLİ TURLA</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolor
+                                            non nostrum officiis, a ipsum sit modi, dolorum delectus beatae porro eius
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-6  mt-3 ">
+                            <a href="">
+                                <div class="services-box">
+
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-car"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>AVTOMOBİLƏR</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                                            dolor non nostrum officiis, a ipsum sit modi, dolorum delectus beatae
+                                            porro eius </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6  mt-3">
+                            <a href="">
+                                <div class="services-box">
+
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-ship"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>SƏYAHƏT</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                                            dolor non nostrum officiis, a ipsum sit modi, dolorum delectus
+                                            beatae porro eius </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6  mt-3">
+                            <a href="">  <div class="services-box">
+                              
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-people-group"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>QURUP TURLAR</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Accusantium, dolor non nostrum officiis, a ipsum sit modi,
+                                            dolorum delectus beatae porro eius </p>
+                                    </div>
+                              
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6  mt-3">
+                            <a href=""> <div class="services-box">
+                            
+                                    <div class="services-img">
+                                        <span><i class="fa-solid fa-user-shield"></i></span>
+                                    </div>
+                                    <div class="services-text">
+                                        <a href="">
+                                            <h3>SIĞORTA</h3>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Accusantium, dolor non nostrum officiis, a ipsum sit modi,
+                                            dolorum delectus beatae porro eius </p>
+                                    </div>
+                              
+                            </div>  </a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+    <footer>
+        <div class="container-xl">
+            <div class="box-footer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="box">
+                            <div class="img-logo">
+                                <img src="./photo/icon/aztur logo 1080 ağ.png" alt="">
+                            </div>
+                            <div class="social">
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-3">
+                        <div class="footer-nav">
+
+                            <ul>
+                                <h4>Menyular</h4>
+                                <li><a href="About.html">Haqqımızda</a></li>
+                                <li><a href="services.html">Xidmətlər</a></li>
+                                <li><a href="turs.html">Turlar</a></li>
+                                <li><a href="aboutthecar.html">Avtomobilər</a></li>
+                                <li><a href="Car.html">Rent a car</a></li>
+                                <li><a href="contact.html">Əlaqə</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-3 ">
+                        <div class="footer-nav">
+
+                            <ul>
+                                <h4>Faydalı Linklər</h4>
+                                <li><a href="Frequentlyaskedquestions.html">Tez-tez soruşulanlar</a></li>
+                                <li><a href="kariyer.html">Karyera</a></li>
+                                <li><a href="branch.html">Xidmət şəbəkəsi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-3">
+                        <div class="footer-nav">
+
+                            <ul>
+                                <h4>FAQ</h4>
+                                <li><a href="">Təhlükəsizlik</a></li>
+                                <li><a href="Rulesandregulations.html">Şərtlər və qaydalar</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bootom">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="text d-flex justify-content-center">
+                            <p>Copyright</p>
+                        </div>
+                        <div class="col-lg-8"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- goupstairs JS -->
+    <div id="goupstairs" title="go upstairs" style="display: block;"><a href="#goupstairs"><i class="fa-solid fa-arrow-up"></i></a> </div>
+   
+
+    <!-- query JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Fontawesome  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- ower carsel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- js-docment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js-docment -->
+    <script src="doc-js/doc.js"></script>
+</body>
+
+</html>

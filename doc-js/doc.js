@@ -1,9 +1,23 @@
 
+$(function(){
+  $('.selectpicker').selectpicker();
+});
+
+
+
+
+
+
+
+
 
 
 
 AOS.init({
-  duration: 1200,
+  offset: 100,
+  duration: 800,
+  easing: 'ease-in-quad',
+  delay: 100,
 })
 
 
@@ -116,7 +130,8 @@ $('.car-catalog .filterDiv').owlCarousel({
       items: 2,
       nav: false
     },
-    1000: {
+   
+    1100: {
       items: 3,
       nav: true,
       loop: false
@@ -219,6 +234,28 @@ $('.partner .partner-box .owl-carousel').owlCarousel({
 });
 
 
+//Whatsap pop up
+function aparecer(){
+  let Formulario = document.getElementById("formulario").style.display = "block"; document.getElementById("whatsapp01").style.display = "none";
+}
+function closer(){
+  let CloseFormulario = document.getElementById("formulario").style.display = "none"; document.getElementById("whatsapp01").style.display = "block";
+}
+
+// FORMULÁRIO
+function pegar(){
+  let inicio = "https://api.whatsapp.com/send/?phone=994997720444&text=Olá+me+chamo+";
+  let fim = "&app_absent=0";
+  let Nome = document.getElementById("name").value;
+  let Email = document.getElementById("email").value;
+  let Mensagem = document.getElementById("mensagem").value;
+  
+ window.location.href = inicio + Nome + "+meu email é:+" + Email + "+. +" + Mensagem + fim;
+}
+
+
+
+
 /* cars filter button */
 
 
@@ -250,6 +287,18 @@ $('#goupstairs').on('click', function(){
 
 
 
+/* valuta  */
+
+function updateSymbol(e) {
+  var selected = $(".currency-selector option:selected");
+  $(".currency-symbol").text(selected.data("symbol"))
+  $(".currency-amount").prop("placeholder", selected.data("placeholder"))
+  $('.currency-addon-fixed').text(selected.text())
+}
+
+$(".currency-selector").on("change", updateSymbol)
+
+updateSymbol()
 /* section rentacar car filter:  */
 filterSelection("spor")
 function filterSelection(c) {
@@ -294,5 +343,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 
 }
+
 
 

@@ -20,22 +20,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- bootstrap 5  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- fancybox  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap select  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
 
-<!-- Aos  -->
+    <!-- fancybox  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Aos  -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
 
-     <!-- ower carsel CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ower carsel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
     <header>
@@ -69,7 +77,7 @@
                             <p>Hər növ avtomobilin icarəsi</p>
                         </div>
                     </div>
-                    
+
 
                 </div>
                 <div class="swiper-button-next"></div>
@@ -90,13 +98,17 @@
                         </a>
                     </div>
                     <div class="col-lg-9 right">
-                        
+
                         <div class="top">
-                            <a id="logo" style=" display:none;" href="">
-                                <img style="max-width:50px;"  class="img-fluid" src="./photo/icon/aztur logo 1080 ağ.png" alt="">
-                            </a>
-                            <div class="social">
+                            <!---
+                            <a id="logo" style=" " href="tel:(+994 12) 444 44 44">
+                                <img style="max-width:20px;"  class="img-fluid" src="./photo/icon/contact-tel.svg" alt="">
+                            </a> ---->
+                            <div class="social" style="margin-right: 30px;">
                                 <ul>
+                                    <li> <a id="logo" href="tel:(+994 12) 444 44 44">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </a></li>
                                     <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                                     <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
                                     <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -105,29 +117,62 @@
 
                                 </ul>
                             </div>
-                            
+                            <div class="language"><select class="selectpicker" data-width="fit">
+                                    <option data-content='<span class="flag-icon flag-icon-az"></span> '>
+                                        Azəerbaycan
+                                    </option>
+                                    <option data-content='<span class="flag-icon flag-icon-rs"></span> '>Rus
+                                    </option>
+                                    <option data-content='<span class="flag-icon flag-icon-us"></span> '>EN
+                                    </option>
+                                </select></div>
+
                             <form class="example" id="form" action="" style="display: block;">
                                 <input type="text" placeholder="Axtar.." name="search">
-                               
+
                             </form>
-                            <div class="toggle-button">   <button id="toggle"><i class="fa-solid fa-bars"></i></button></div>
+                            <div class="toggle-button"> <button id="toggle"><i class="fa-solid fa-bars"></i></button>
+                            </div>
                         </div>
                         <div class="cartoon"></div>
                         <div class="bottom">
-                           
+
                             <ul id="menu">
-                      
+
                                 <li class="main"><a href="About.html">Haqqımızda</a></li>
+                                <li class="main"><a href="Car.html">Avtomobilərimiz</a></li>
                                 <li class="main"><a href="blogs.html">Bloglar</a></li>
                                 <li class="main"><a href="services.html">Xidmətlər</a></li>
-                                <li class="main"><a href="turs.html">Turlar</a></li>
-                                <li class="main"><a href="aboutthecar.html">Avtomobilər</a></li>
-                                <li class="main"><a href="Car.html">Rent a car</a></li>
+                                <li class="main"><a href="galariy.html">Galleriya</a></li>
                                 <li class="main"><a href="contact.html">Əlaqə</a></li>
-                                
+
+
+                                <div class="currency">
+                                    <div class="wrapper">
+                                        <form class="form-inline">
+
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon currency-symbol">$</div>
+
+                                                <div class="input-group-addon currency-addon">
+
+                                                    <select class="currency-selector">
+                                                        <option data-symbol="₼" selected>AZN</option>
+                                                        <option data-symbol="$">USD</option>
+                                                        <option data-symbol="€">EUR</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+                                </div>
 
                             </ul>
-                            
+
+
                         </div>
                     </div>
                 </div>
@@ -144,23 +189,47 @@
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </div>
+
                 <div class="logo">
                     <a href="index.html">
                         <img class="img-fluid" src="./photo/icon/aztur logo 1080 ağ.png" alt="">
                     </a>
                 </div>
                 <div class="menu-items">
+                    <div class="mobilemenu-div">
+                        <div class="language"><select class="selectpicker" data-width="fit">
+                                <option data-content='<span class="flag-icon flag-icon-az"></span> '>
+                                    Azəerbaycan
+                                </option>
+                                <option data-content='<span class="flag-icon flag-icon-rs"></span> '>Rus
+                                </option>
+                                <option data-content='<span class="flag-icon flag-icon-us"></span> '>EN
+                                </option>
+                            </select></div>
+                        <div class="currency">
+
+
+
+                        </div>
+                    </div>
                     <li>
                         <form class="example" id="form" action="" style="display: block;">
                             <input type="text" placeholder="Axtar.." name="search">
                     </li>
                     <li class=""><a href="About.html">Haqqımızda</a></li>
+                    <li class=""><a href="Car.html">Avtomobilərimiz</a></li>
                     <li class=""><a href="blogs.html">Bloglar</a></li>
                     <li class=""><a href="services.html">Xidmətlər</a></li>
-                    <li class=""><a href="turs.html">Turlar</a></li>
-                    <li class=""><a href="aboutthecar.html">Avtomobilər</a></li>
-                    <li class=""><a href="Car.html">Rent a car</a></li>
+                    <li class=""><a href="galariy.html">Galleriya</a></li>
                     <li class=""><a href="contact.html">Əlaqə</a></li>
+                    <li><select style="height: 30px;
+                        border: none;
+                        background-image: none !important;
+                        outline: none;" >
+                            <option data-symbol="₼" selected> AZN(Azerbaijan Manat) </option>
+                            <option data-symbol="$">USD(US Dollar)</option>
+                            <option data-symbol="€">EUR</option>
+                        </select></li>
 
                 </div>
             </div>
@@ -169,18 +238,61 @@
     <!---section rentacar---->
 
     <section class="rentacar" id="rentacar">
+        <div class="container">
+            <div class="header-text">
+                <h2>RENT A CAR</h2>
+                <p>Lorem ipsum dolor sit amet elit.</p>
+            </div>
+        </div>
+
         <div class="container-fluid">
-            <div class="container">
-                <div class="header-text">
-                    <h2>RENT A CAR</h2>
-                    <p>Lorem ipsum dolor sit amet elit.</p>
+            <div class="box-filters">
+                <div class="container">
+                    <div class="filters">
+                        <div class="owl-carousel owl-theme" id="filtersbtn">
+                            <div class="item">
+                                <button data-aos="zoom-out-up" class="btn  " onclick="filterSelection('luggage')"><img
+                                        src="./photo/icon/Frame.png" alt="">
+                                    Bagaj</button>
+                            </div>
+                            <div class="item">
+                                <button data-aos="zoom-out-up" class="btn" onclick="filterSelection('Saloon') "> <img
+                                        src="./photo/icon/salon.png" alt="">
+                                    Saloon</button>
+                            </div>
+                            <div class="item">
+                                <button data-aos="zoom-out-up" class="btn activee " onclick="filterSelection('spor')"><img
+                                        src="./photo/icon/sports-car.png" alt="">
+                                    2 nəfərlik</button>
+                            </div>
+                            <div class="item">
+                                <button data-aos="zoom-out-up" class="btn" onclick="filterSelection('opentop')"><img
+                                        src="./photo/icon/convertible.png" alt="">
+                                    Üzəri acılan</button>
+                            </div>
+                            <div class="item">
+                                <button data-aos="zoom-out-up" class="btn" onclick="filterSelection('wide')"> <img
+                                        src="./photo/icon/suv-car-icon.png" alt="">
+                                    Geniş</button>
+                            </div>
+                            <div class="item">
+                                <button data-aos="zoom-out-up" class="btn" onclick="filterSelection('pulus4')"> <img
+                                        src="./photo/icon/4x4-adventure-sportive-transport-side-view.png" alt="">
+                                    4x4</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="container">
 
-                <div  data-aos="fade-down" class="  big-box owl-carousel owl-theme filterDiv luggage ">
+
+                <div data-aos="fade-down" class="  big-box owl-carousel owl-theme filterDiv luggage ">
                     <div class="item mt-2 ">
                         <div class="box-cart">
                             <div class="box-img">
-                                <img src="./photo/car/rentacar/photo1.jpg" alt="">
+                                <img data-aos="flip-up" src="./photo/car/rentacar/photo1.jpg" alt="">
                             </div>
                             <div class="box-text">
                                 <div class="brand-name">
@@ -200,7 +312,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -214,14 +326,17 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
                     <div class="item mt-2 ">
                         <div class="box-cart">
                             <div class="box-img">
-                                <img src="./photo/car/rentacar/photo1.jpg" alt="">
+                                <img data-aos="flip-up" src="./photo/car/rentacar/photo1.jpg" alt="">
                             </div>
                             <div class="box-text">
                                 <div class="brand-name">
@@ -241,7 +356,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -255,7 +370,10 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
@@ -263,7 +381,7 @@
                     <div class="item mt-2">
                         <div class="box-cart">
                             <div class="box-img">
-                                <img src="./photo/car/rentacar/photo2.jpg" alt="">
+                                <img data-aos="flip-up" src="./photo/car/rentacar/photo2.jpg" alt="">
                             </div>
                             <div class="box-text">
                                 <div class="brand-name">
@@ -283,7 +401,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -297,18 +415,18 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
                             </div>
                         </div>
                     </div>
                     <div class="item mt-2">
                         <div class="box-cart">
                             <div class="box-img">
-                                <img src="./photo/car/rentacar/photo2.jpg" alt="">
+                                <img data-aos="flip-up" src="./photo/car/rentacar/photo2.jpg" alt="">
                             </div>
                             <div class="box-text">
                                 <div class="brand-name">
-                                    <a href="">
+                                    <a href="aboutthecar.html">
                                         <h3>AUDI</h3>
                                     </a>
                                 </div>
@@ -324,7 +442,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -338,7 +456,9 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
                             </div>
                         </div>
                     </div>
@@ -370,7 +490,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -384,7 +504,11 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
+
                             </div>
                         </div>
                     </div>
@@ -411,7 +535,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -425,7 +549,9 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
                             </div>
                         </div>
                     </div>
@@ -453,7 +579,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -467,7 +593,10 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
@@ -494,7 +623,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -508,7 +637,9 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
                             </div>
                         </div>
                     </div>
@@ -516,7 +647,7 @@
 
 
                 </div>
-                <div data-aos="fade-down"class="  big-box owl-carousel owl-theme filterDiv spor ">
+                <div data-aos="fade-down" class="  big-box owl-carousel owl-theme filterDiv spor ">
                     <div class="item mt-2 ">
                         <div class="box-cart">
                             <div class="box-img">
@@ -540,7 +671,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -554,7 +685,10 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
@@ -582,7 +716,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -596,7 +730,10 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
@@ -623,7 +760,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -637,7 +774,10 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
@@ -669,7 +809,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -683,12 +823,15 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-down"  class="  big-box owl-carousel owl-theme filterDiv wide ">
+                <div data-aos="fade-down" class="  big-box owl-carousel owl-theme filterDiv wide ">
                     <div class="item mt-2 ">
                         <div class="box-cart">
                             <div class="box-img">
@@ -712,7 +855,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -726,12 +869,15 @@
                                 <span><i class="fa-solid fa-gas-pump"></i></i>Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
+
                             </div>
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-down"  class="  big-box owl-carousel owl-theme filterDiv pulus4 ">
+                <div data-aos="fade-down" class="  big-box owl-carousel owl-theme filterDiv pulus4 ">
                     <div class="item mt-2 ">
                         <div class="box-cart">
                             <div class="box-img">
@@ -755,7 +901,7 @@
                                         <label for="star2" title="text">2 stars</label>
                                         <input type="radio" id="star1" name="rate" value="1" />
                                         <label for="star1" title="text">1 star</label>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="price">
                                     <span><img src="./photo/icon/prınce.png" alt=""></span>
@@ -769,54 +915,104 @@
                                 <span><img src="./photo/icon/petrol.png" alt="">Benzin</span>
                             </div>
                             <div class="box-button">
-                                <a href="">RENT</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-filters">
-                <div class="container">
-                    <div class="filters">
-                        <div class="owl-carousel owl-theme" id="filtersbtn">
-                            <div class="item">
-                                <button class="btn  " onclick="filterSelection('luggage')"><img
-                                        src="./photo/icon/Frame.png" alt="">
-                                    Bagaj</button>
-                            </div>
-                            <div class="item">
-                                <button class="btn" onclick="filterSelection('Saloon') "> <img
-                                        src="./photo/icon/salon.png" alt="">
-                                    Saloon</button>
-                            </div>
-                            <div class="item">
-                                <button class="btn activee " onclick="filterSelection('spor')"><img
-                                        src="./photo/icon/sports-car.png" alt="">
-                                    2 nəfərlik</button>
-                            </div>
-                            <div class="item">
-                                <button class="btn" onclick="filterSelection('opentop')"><img
-                                        src="./photo/icon/convertible.png" alt="">
-                                    Üzəri acılan</button>
-                            </div>
-                            <div class="item">
-                                <button class="btn" onclick="filterSelection('wide')"> <img
-                                        src="./photo/icon/suv-car-icon.png" alt="">
-                                    Geniş</button>
-                            </div>
-                            <div class="item">
-                                <button class="btn" onclick="filterSelection('pulus4')"> <img
-                                        src="./photo/icon/4x4-adventure-sportive-transport-side-view.png" alt="">
-                                    4x4</button>
-                            </div>
+                                <a href="aboutthecar.html">ƏTRAFLI</a>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                    data-target="#flipFlop"> BRON EDİN</button>
 
+                            </div>
                         </div>
                     </div>
                 </div>
+           <!-- The modal -->
+<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title" id="modalLabel">Avtomobil icarəyə götürün</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+            <div class="modal-body">
+                <form class="sendForm" name="" action="" method="post">
+
+                    <div class="form-group">
+                        <label for="">Qəbul yeri</label>
+                        <select style="height: 50px;" name="" id="" class="form-control">
+                            <option value="3">Heyder Aliyev Beynelxalq Airoportu</option>
+                            <option value="4">İcare menteqesi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname">Ad Soyad</label>
+                        <input type="text" name="fullname" class="form-control" id="fullname"
+                            aria-describedby="fullname" placeholder="Ad Soyad">
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <label for="reservation_date_form">Qəbul tarixi və vaxtı</label>
+                                <div class="row">
+                                    <div class="col-md-8 "  >
+                                        <input id="reservation_date_form" name=""
+                                            value="25/12/2022" class="form-control" data-select="datepicker" type="text"
+                                            >
+                                    </div>
+                                    <div class="col-md-4  " style="padding-left: 0;width: 30%;">
+                                        <p class="input-group clockpicker" data-placement="bottom" data-align="top"
+                                            data-autoclose="true">
+                                            <input name="reservation_time_form" id="reservation_time_form" type="text"
+                                                class="form-control" value="12:00">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 ">
+                                <label for="state">Dönüş tarixi və vaxtı</label>
+                                <div class="row">
+                                    <div class="col-md-8 ">
+                                        <input id="" name="" value="25/12/2022" class="form-control"
+                                            data-select="datepicker" type="text">
+                                    </div>
+                                    <div class="col-md-4 " style="padding-left: 0; width: 30%;" >
+                                        <p class="input-group clockpicker" data-placement="bottom" data-align="top"
+                                            data-autoclose="true">
+                                            <input name="return_time_form" id="return_time_form" type="text"
+                                                class="form-control" value="12:00">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="email"
+                            placeholder="Email daxil edin">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Telefon nömrəsi</label>
+
+
+                        <input type="tel" class="form-control" placeholder="+994 99 999 99 99">
+
+
+
+                    </div>
+                    <button type="submit" class="btn btn-primary form-control ">Göndər</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+            </div>
+
         </div>
 
     </section>
+
 
 
 
@@ -848,7 +1044,7 @@
                                 </div>
                                 <div class="box-cart">
                                     <span><img src="./photo/icon/carabout.png" alt=""> Bol <br>
-                                         Çeşid</span>
+                                        Çeşid</span>
                                     <span><img src="./photo/icon/security.png" alt=""> Sığortalı <br> Avtomobilər</span>
                                     <span><img src="./photo/icon/princeabout.png" alt=""> Münasib <br> Qiymət</span>
                                 </div>
@@ -856,10 +1052,10 @@
                         </div>
                         <div class="col-lg-6  mt-5 ">
                             <div class="right">
-                                <div data-aos="fade-up-left" class="video-box  "> <img class="img-fluid " src="./photo/car/rentacar/Home - 1.jpg"
-                                        alt=" Stoneguard ">
-                                    <div class="overlay"> <a data-fancybox="gallery"
-                                            href=""> <i class="fa-solid fa-play"></i> </a>
+                                <div data-aos="fade-up-left" class="video-box  "> <img class="img-fluid "
+                                        src="./photo/car/rentacar/Home - 1.jpg" alt=" Stoneguard ">
+                                    <div class="overlay"> <a data-fancybox="gallery" href=""> <i
+                                                class="fa-solid fa-play"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -924,7 +1120,7 @@
                     <div class="swiper-slide">
                         <div class="Comment-box">
                             <div class="Comment-text">
-                                <h3 data-aos="flip-left" >Ali Aliyev</h3>
+                                <h3 data-aos="flip-left">Ali Aliyev</h3>
                             </div>
                             <div class="Comment-img">
                                 <div class="rate">
@@ -938,11 +1134,10 @@
                                     <label for="star2" title="text">2 stars</label>
                                     <input type="radio" id="star1" name="rate" value="1" />
                                     <label for="star1" title="text">1 star</label>
-                                  </div>
+                                </div>
                             </div>
 
-                            <div data-aos="fade-up"
-                            data-aos-anchor-placement="center-bottom" class="Comment-text">
+                            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="Comment-text">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia dicta
                                     quibusdam! Omnis enim, rerum, blanditiis nihil quibusdam repudiandae
                                     sapiente
@@ -980,11 +1175,10 @@
                                     <label for="star2" title="text">2 stars</label>
                                     <input type="radio" id="star1" name="rate" value="1" />
                                     <label for="star1" title="text">1 star</label>
-                                  </div>
+                                </div>
                             </div>
 
-                            <div data-aos="fade-up"
-                            data-aos-anchor-placement="center-bottom" class="Comment-text">
+                            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="Comment-text">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia dicta
                                     quibusdam! Omnis enim, rerum, blanditiis nihil quibusdam repudiandae
                                     sapiente
@@ -1030,7 +1224,7 @@
                 <div class="partner-box">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <img data-aos="flip-left"  src="./photo/car/partner/ford-logo-png-1770.png" alt="">
+                            <img data-aos="flip-left" src="./photo/car/partner/ford-logo-png-1770.png" alt="">
                         </div>
                         <div class="item">
                             <img data-aos="flip-left" src="./photo/car/partner/bmw-logo-672.png" alt="">
@@ -1039,11 +1233,12 @@
                             <img data-aos="flip-left" src="./photo/car/partner/mazda.png" alt="">
                         </div>
                         <div class="item">
-                            <img data-aos="flip-left" src="./photo/car/partner/kisspng-infiniti-g37-car-logo-nissan-infiniti-logo-symbol-vector-free-download-5b7ebb5d2bf849.7072937015350321571801.png"
+                            <img data-aos="flip-left"
+                                src="./photo/car/partner/kisspng-infiniti-g37-car-logo-nissan-infiniti-logo-symbol-vector-free-download-5b7ebb5d2bf849.7072937015350321571801.png"
                                 alt="">
                         </div>
-                        <div  class="item">
-                            <img data-aos="flip-left"  src="./photo/car/partner/Volkswagen.png" alt="">
+                        <div class="item">
+                            <img data-aos="flip-left" src="./photo/car/partner/Volkswagen.png" alt="">
                         </div>
                         <div class="item">
                             <img data-aos="flip-left" src="./photo/car/partner/nissan-logo-701.png" alt="">
@@ -1060,76 +1255,82 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-12">
                         <div class="box">
-                        <div class="img-logo">
-                            <img src="./photo/icon/aztur logo 1080 ağ.png" alt="logo">
+                            <div class="img-logo">
+                                <img src="./photo/icon/aztur logo 1080 ağ.png" alt="logo">
+                            </div>
+                            <div class="social">
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+
+                                </ul>
+                            </div>
                         </div>
-                        <div class="social">
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-3">
+                        <div class="footer-nav">
+
                             <ul>
-                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                                <h4>Menyular</h4>
+                                <li><a href="About.html">Haqqımızda</a></li>
+                                <li ><a href="Car.html">Avtomobilərimiz</a></li>
+                                <li ><a href="blogs.html">Bloglar</a></li>
+                                <li ><a href="services.html">Xidmətlər</a></li>
+                                <li><a href="galariy.html">Galleriya</a></li>
+                                <li ><a href="contact.html">Əlaqə</a></li>
 
                             </ul>
                         </div>
                     </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 mt-3">
-                       <div class="footer-nav">
-                       
-                        <ul>
-                            <h4>Menyular</h4>
-                            <li><a href="About.html">Haqqımızda</a></li>
-                            <li><a href="services.html">Xidmətlər</a></li>
-                            <li><a href="turs.html">Turlar</a></li>
-                            <li><a href="aboutthecar.html">Avtomobilər</a></li>
-                            <li><a href="Car.html">Rent a car</a></li>
-                            <li><a href="contact.html">Əlaqə</a></li>
-
-                        </ul></div>
-                    </div>
                     <div class="col-lg-3 col-md-4 mt-3 ">
                         <div class="footer-nav">
-                            
+
                             <ul>
                                 <h4>Faydalı Linklər</h4>
                                 <li><a href="Rulesandregulations.html">Tez-tez soruşulanlar</a></li>
                                 <li><a href="kariyer.html">Karyera</a></li>
-                                <li><a href="branch.html">Xidmət şəbəkəsi</a></li>   
-                            </ul></div>
+                                <li><a href="branch.html">Xidmət şəbəkəsi</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-3">
                         <div class="footer-nav">
-                        
-                        <ul>
-                            <h4>FAQ</h4>
-                            <li><a href="">Təhlükəsizlik</a></li>
-                            <li><a href="Rulesandregulations.html">Şərtlər və qaydalar</a></li>
-                           
-                        </ul></div>
+
+                            <ul>
+                                <h4>FAQ</h4>
+                                <li><a href="">Təhlükəsizlik</a></li>
+                                <li><a href="Rulesandregulations.html">Şərtlər və qaydalar</a></li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-bootom">
             <div class="container-xl">
-             <div class="row">
-                <div class="col-lg-3">
-                <div class="text d-flex justify-content-center">
-                    <p>Copyright</p>
-                </div>
-                <div class="col-lg-8"></div>
-                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="text d-flex justify-content-center">
+                            <p>Copyright</p>
+                        </div>
+                        <div class="col-lg-8"></div>
+                    </div>
                 </div>
             </div>
-           
+
         </div>
     </footer>
 
 
-  
-   
+<!-- phone JS -->
+<div id="phone"  style="display: block;"><a href="tel:(+994 12) 444 44 44"><i class="fa-solid fa-phone"></i></a> </div>
+<!-- goupstairs JS -->
+<div id="goupstairs" title="go upstairs" style="display: block;"><a href="#goupstairs"><i
+    class="fa-solid fa-arrow-up"></i></a> </div>
     <!-- query JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -1139,7 +1340,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
         integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- bootstrap select  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
@@ -1154,8 +1358,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- <!-- js-docment -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js-docment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- js-docment -->
 
     <script src="doc-js/doc.js"></script>

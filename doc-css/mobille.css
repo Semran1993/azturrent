@@ -376,4 +376,9 @@
         object-fit: cover;
         object-position: center;
     }
+
+    #flipFlop .col-md-4{
+        width: 100% !important;
+        padding-left: 15px !important;
+    }
 }

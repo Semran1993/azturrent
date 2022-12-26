@@ -250,7 +250,7 @@ function pegar(){
   let Email = document.getElementById("email").value;
   let Mensagem = document.getElementById("mensagem").value;
   
- window.location.href = inicio + Nome + "+meu email é:+" + Email + "+. +" + Mensagem + fim;
+ window.location.href = inicio + Nome + " + Mail + " + Email + "+. +" + Mensagem + fim;
 }
 
 

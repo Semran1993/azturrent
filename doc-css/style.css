@@ -1151,8 +1151,6 @@ nav .container .right .bottom ul li:hover a::after {
 }
 
 #about .big-box-about .left .box-cart {
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;

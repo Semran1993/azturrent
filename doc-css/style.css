@@ -298,7 +298,6 @@ header .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     width: 100%;
     border-radius: 5px;
     font-size: 20px;
-
     background: #FFC107;
     transform: translatex(-50%);
     opacity: 0;
@@ -306,6 +305,10 @@ header .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
 }
 
 .navbar .menu-items li:hover a::after {
@@ -325,6 +328,34 @@ header .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     }
 }
 
+.navactivet {
+padding: 1px 10px ;
+background: white;
+color: black !important;
+font-weight: 600;
+  }
+
+  .navactive::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    padding: 2px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #FFC107;
+    transform: translatex(-50%);
+    opacity: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
 
 .nav-cont {
     display: block;
@@ -663,6 +694,31 @@ nav .container .right .bottom ul li a::after {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+nav .container .right .bottom ul li .navlink::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    padding: 2px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #FFC107;
+    transform: translatex(-50%);
+    opacity: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
 }
 
 nav .container .right .bottom ul li:hover a::after {

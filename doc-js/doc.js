@@ -233,6 +233,34 @@ $('.partner .partner-box .owl-carousel').owlCarousel({
   }
 });
 
+$('.navlink').on('click', function (e) {
+  var current = $(this );
+  console.log(current);
+  console.log(JSON.stringify(current));
+  localStorage.setItem('activeTab', $('.navlink').index(current));
+
+});
+$('nav .container .left').on('click', function (e) {
+  var current = $(this );
+  console.log(current);
+  console.log(JSON.stringify(current));
+  localStorage.removeItem('activeTab', $('.navlink').index(current));
+
+});
+var activeTab = localStorage.getItem('activeTab');
+if (activeTab) {
+        activeTabEL = $('.navlink').eq(parseInt(activeTab));
+  
+        activeTabEL.addClass('navactivet');
+    
+      
+}
+
+  
+
+
+
+
 
 //Whatsap pop up
 function aparecer(){

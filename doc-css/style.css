@@ -36,6 +36,7 @@ input,
 textarea {
     all: revert;
     outline: none;
+    box-shadow: none !important;
    
 }
 

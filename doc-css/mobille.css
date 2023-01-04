@@ -391,4 +391,7 @@
         align-items: stretch;
         width: 100% !important;
     }
+    .form-group input {
+        width: 91% !important;
+    }
 }

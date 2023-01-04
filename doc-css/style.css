@@ -20,6 +20,11 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
     font-family: 'Poppins', sans-serif;
+   
+   
+}
+button{
+    box-shadow: none !important;
 }
 
 input[type="checkbox"],
@@ -31,6 +36,7 @@ input,
 textarea {
     all: revert;
     outline: none;
+   
 }
 
 
@@ -68,6 +74,7 @@ table {
 * {
     line-height: normal !important;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 ::-webkit-scrollbar {
@@ -101,6 +108,7 @@ table {
     padding: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 html {
@@ -111,6 +119,7 @@ body {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    box-shadow: none !important;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }

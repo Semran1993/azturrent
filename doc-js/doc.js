@@ -1,24 +1,11 @@
 
-$(function(){
-  $('.selectpicker').selectpicker();
-});
-
-
-
-
-
-
-
-
-
-
 
 AOS.init({
   offset: 100,
   duration: 800,
   easing: 'ease-in-quad',
   delay: 100,
-})
+});
 
 
 
@@ -71,6 +58,27 @@ var swiper = new Swiper(" header .headerSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+var swiper = new Swiper(" #Comment .mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+ 
+});
+
 
 /* section rentacar car filter:  */
 
@@ -180,24 +188,7 @@ $('.about-galary .owl-carousel').owlCarousel({
 /* Comment  */
 
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
- 
-});
+
 
 
 
@@ -233,14 +224,27 @@ $('.partner .partner-box .owl-carousel').owlCarousel({
   }
 });
 
-$('.navlink').on('click', function (e) {
+
+
+// $('.navlink').on('click', function (e) {
+//   var current = $(this );
+//   console.log(current);
+//   console.log(JSON.stringify(current));
+//   localStorage.setItem('activeTab', $('.navlink').index(current));
+// });
+
+function setActiveTab(index) {
+  localStorage.setItem('activeTab', index);
+}
+
+$('nav .container .left').on('click', function (e) {
   var current = $(this );
   console.log(current);
   console.log(JSON.stringify(current));
-  localStorage.setItem('activeTab', $('.navlink').index(current));
+  localStorage.removeItem('activeTab', $('.navlink').index(current));
 
 });
-$('nav .container .left').on('click', function (e) {
+$('footer .footer-nav ul li a').on('click', function (e) {
   var current = $(this );
   console.log(current);
   console.log(JSON.stringify(current));
@@ -250,15 +254,65 @@ $('nav .container .left').on('click', function (e) {
 var activeTab = localStorage.getItem('activeTab');
 if (activeTab) {
         activeTabEL = $('.navlink').eq(parseInt(activeTab));
-  
+     
         activeTabEL.addClass('navactivet');
-    
-      
+        activeTabEL.addClass('navactivet');
+        
+ 
+          $("nav .container .right .bottom ul li a").css('background: white');
+         
+          
+        
 }
 
+
+    /* product left start */
+    if($(".product-left").length){
+      var productSlider = new Swiper('.product-slider', {
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop:true,
+        direction: 'horizontal',
+        loopedSlides: 5,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        resizeObserver:true,
+      });
+      var productThumbs = new Swiper('.product-thumbs', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        slideToClickedSlide: true,
+        direction: 'horizontal',
+        slidesPerView: 5,
+        loopedSlides: 5,
+      });
+      productSlider.controller.control = productThumbs;
+      productThumbs.controller.control = productSlider;
+      
+    
   
+  
+    }
+    /* 	product left end */
+//galary
 
+$(".galery .tab .photo ").click(function(){
+  $(".galery #photo ").slideDown(500);
+    $(".galery #video").slideUp(500);
+    $(".galery .photo ").css({"background-color":"#021974 ","color":"white"});
+    $(".galery .video ").css({"background-color":" transparent  ","color":"black"});
+    
+  });
 
+    $(".galery .tab .video ").click(function(){
+  $(".galery  #video ").slideDown(500);
+    $(".galery  #photo").slideUp(500);
+    $(".galery .video ").css({"background-color":"#021974 ","color":"white"});
+    $(".galery .photo ").css({"background-color":" transparent ","color":"black"});
+  });
 
 
 

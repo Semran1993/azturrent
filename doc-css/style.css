@@ -203,6 +203,15 @@ header .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     color: white;
     padding-left: 150px;
 }
+header .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
 
 /*=============================================
 =            Section navbar mobille block            =
@@ -328,34 +337,13 @@ header .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
     }
 }
 
-.navactivet {
+nav .container .navactivet {
 padding: 1px 10px ;
 background: white;
 color: black !important;
 font-weight: 600;
   }
 
-  .navactive::after {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    padding: 2px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 20px;
-    background: #FFC107;
-    transform: translatex(-50%);
-    opacity: 1;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    -webkit-transform: translatex(-50%);
-    -moz-transform: translatex(-50%);
-    -ms-transform: translatex(-50%);
-    -o-transform: translatex(-50%);
-}
 
 .nav-cont {
     display: block;
@@ -990,7 +978,7 @@ nav .container .right .bottom ul li:hover a::after {
     align-items: center;
     padding: 4px 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid white;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
@@ -1007,7 +995,7 @@ nav .container .right .bottom ul li:hover a::after {
     align-items: center;
     padding: 4px 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid white;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
@@ -2533,6 +2521,7 @@ footer .footer-bootom p {
     display: flex;
     background: #f8f6f7;
     width: 100%;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -2540,7 +2529,7 @@ footer .footer-bootom p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+   
 }
 
 .aboutthecar .car-card .left-img span {
@@ -2893,7 +2882,7 @@ footer .footer-bootom p {
     align-items: center;
     padding: 4px 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid white;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
@@ -2911,7 +2900,7 @@ footer .footer-bootom p {
     align-items: center;
     padding: 4px 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
 }
@@ -3229,7 +3218,7 @@ footer .footer-bootom p {
     align-items: center;
     padding: 4px 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid white;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
@@ -3246,7 +3235,7 @@ footer .footer-bootom p {
     align-items: center;
     padding: 4px 0;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid white;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
@@ -3325,7 +3314,7 @@ footer .footer-bootom p {
     border: 2px solid rgb(206, 206, 206);
     border-radius: 5px;
     padding: 2px 10px;
-    color: white;
+    color: black;
     width: 90% !important;
     box-shadow: none;
 }
@@ -4714,9 +4703,9 @@ footer .footer-bootom p {
 
 
 .galery .tab button {
-    background-color: inherit;
+    width: 150px;
     float: left;
-    border: 1px rgba(227, 227, 227, 0.5);
+    border: 1px solid #021974;
     outline: none;
     cursor: pointer;
     color: black;
@@ -4726,6 +4715,10 @@ footer .footer-bootom p {
     font-size: 17px;
 
 }
+.galery .video{
+    background:#021974  ; 
+    color:white;
+}
 
 
 .galery .tab button:hover {
@@ -4733,17 +4726,6 @@ footer .footer-bootom p {
 
 }
 
-.galery .tab button.active {
-    background: #09259A;
-    background-position: top;
-    background-size: cover;
-    color: white;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-}
 
 
 .galery .tabcontent {
@@ -4886,120 +4868,191 @@ footer .footer-bootom p {
 
 
 
-
-
-
-
-
-
-.language {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+.nav-mobille .lang ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding:0;
 }
 
-.language .dropdown-toggle::after {
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
 
-    border: none !important;
-}
 
-.language .btn-group>.btn:first-child {
-    margin-left: 10px;
-    background: transparent !important;
-    border: none !important;
-    color: white;
-    cursor: pointer !important;
-    outline: none !important;
-    box-shadow: none;
-    padding: 0;
-
-}
-
-.language .bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*=span], .bootstrap-select.btn-group[class*=col-] {
-    float: none;
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-.language .flag-icon {
-
-    width: 25px;
-    height: 25px;
-    background-position: center;
-    background-size: contain;
-
-}
-
-.language .bootstrap-select.btn-group .dropdown-menu ul {
+.nav-mobille .lang .lang-list li a::after{
     border: none;
-    outline: none !important;
-
-    flex-direction: column;
+    bottom: 0;
+    background: none !important;
 }
 
-.language .bootstrap-select.btn-group .dropdown-menu li>a {
-    padding: 2px 8px !important;
-    cursor: pointer !important;
-    outline: none !important;
-    box-shadow: none;
-    border: none;
-    overflow: hidden;
+.lang{
+    position: relative;
+    float: left;
+    
 }
-
-.language .bootstrap-select.btn-group.fit-width .btn .caret {
-    position: static;
-    top: auto;
-    margin-top: -1px;
+ .lang .lang-list{
     display: none;
-}
-
-.currency {
-    width: 80px;
-
-}
-
-.currency .currency-selector {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 71%;
-    height: 100%;
-    padding-left: 0.5rem;
-    border: 0;
-    outline: none;
-
-    appearance: none;
-    background-image: none !important;
-    font-family: inherit;
-    color: inherit;
+    background-color:white;
+}
+ .lang:hover .lang-list{
+    display: block;
 }
 
-.currency select option {
-    color: black !important;
+.lang span svg{
+    transform: rotate(180deg);
+    margin-left: 5px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    font-size: 18px;
+    color: rgb(206, 206, 206);
 }
-
-.currency .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
-    border-top-right-radius: 0;
-    margin: 0;
-    padding: 0;
+.lang:hover span svg{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform: rotate();
 }
-
-.currency .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    /* margin-left: -1px; */
-    background: transparent;
-    border-top-left-radius: 0;
-    border: none;
-    border-bottom-left-radius: 0;
+.lang span{
+    margin: 0 10px;
+    border:none;
+    padding-right: 5px; 
     color: white;
-    box-shadow: none;
+    cursor: pointer;}
+.lang ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding:0 !important;
+}
+.lang .box{
+    width: 70px;
+}
+.lang ul li{
+    text-align: center;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+    width: 70px;
+    border-radius: 1px;
+    margin: 0 !important;
+    z-index: 1000;
+    position: relative;
+}
+.lang-list li a{
+    text-align: center;
+    color:black !important;
+    width: 100%;
+    text-decoration: none!important;
+    font-weight: 500;
+    cursor: pointer;
+}
+.lang-list li:hover {
+    background:#021974!important;
+    
+}.lang-list li:hover a{
+    color: white !important;
 }
 
+
+
+.nav-mobille .currency{
+    position: relative;
+    display: block !important;
+   width: 100% !important;
+}
+
+.nav-mobille .currency .currency-list{
+    position: absolute;
+    text-align: center;
+    margin:0 auto;
+    left: 50%;
+    transform:translate(-50% ) ;
+    background-color:white;
+    display: none !important;
+    justify-content: center;
+    -webkit-transform:translate(-50% ) ;
+    -moz-transform:translate(-50% ) ;
+    -ms-transform:translate(-50% ) ;
+    -o-transform:translate(-50% ) ;
+}
+.currency{
+    position: relative;
+    display: block !important;
+    width: 75px;
+}
+.nav-mobille .currency .box{
+    position:relative !important;
+}
+.currency .box{
+    position:absolute;
+}
+ .currency .currency-list{
+    display: none !important;
+    position: absolute;
+    background-color:white;
+}
+ .currency:hover .currency-list{
+    display: block !important;
+}
+
+.currency span svg{
+    transform: rotate(180deg);
+    margin-left: 5px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    font-size: 18px;
+    color: rgb(206, 206, 206);
+}
+.currency:hover span svg{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -webkit-transform: rotate();
+}
+.currency span{
+    margin: 0 10px;
+    border:none;
+    padding-right: 5px; 
+    color: white;
+    cursor: pointer;}
+.currency ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding:0 !important;
+}
+.currency ul li{
+    text-align: center;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+   margin: 0 !important;
+    border-radius: 1px;
+    z-index: 1000;
+    width: 100%;
+    position: relative;
+}
+.currency-list li a{
+    text-align: center;
+    color:black !important;
+    width: 100%;
+    text-decoration: none!important;
+    font-weight: 500;
+    cursor: pointer;
+}
+.currency-list li a::after{
+    border: none;
+    bottom: 0;
+    background: none !important;
+}
+.currency-list li:hover {
+    background:#021974 !important;
+    
+}.currency-list li:hover a{
+    color: white !important;
+}
 
 
 .wrapper {
@@ -5087,19 +5140,118 @@ footer .footer-bootom p {
     color: white !important;
     background: #09259A !important;
     transition: all 0.5s ease-in-out !important;
-    -webkit-transition: all 0.5s ease-in-out !important;
-    -moz-transition: all 0.5s ease-in-out !important;
-    -ms-transition: all 0.5s ease-in-out !important;
-    -o-transition: all 0.5s ease-in-out !important;
+   
 }
 
 .modal-content .btn:hover {
     background: #FFC107 !important;
 }
 .modal.in .modal-dialog {
-    -webkit-transform: translate(0,0);
+  
     margin: auto !important;
-    -ms-transform: translate(0,0);
-    -o-transform: translate(0,0);
+   
     transform: translate(0,0);
+   
 }
+#aboutthecar .product-thumbs .swiper-slide img {
+    border:2px solid transparent;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  #aboutthecar .product-thumbs .swiper-slide-active img {
+    border-color: #bc4f38;
+  }
+  #aboutthecar .product-slider .swiper-button-next:after,
+  #aboutthecar .product-slider .swiper-button-prev:after {
+      font-size: 20px;
+      color: #000;
+      font-weight: bold;
+  }
+
+
+  #aboutthecar .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  #aboutthecar .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  #aboutthecar .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiperpraduct{
+    display: flex !important;
+    flex-direction: row-reverse !important;
+
+  }
+  .swiper-vertical>.swiper-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+  .swiperleft {display: flex;}
+  
+
+  #aboutthecar .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #aboutthecar .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  #aboutthecar .mySwiper2 {
+    height: 350px !important;
+    width: 100%;
+  }
+
+  #aboutthecar .mySwiper {
+    width: 30%;
+    height: 350px;
+    box-sizing: border-box;
+    
+  }
+
+  #aboutthecar .mySwiper .swiper-slide {
+   width: 150px !important;
+   height: 109x !important;
+    
+    opacity: 1;
+  }
+
+  #aboutthecar .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  #aboutthecar .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

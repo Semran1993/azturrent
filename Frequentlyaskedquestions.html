@@ -24,13 +24,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
-        <!-- bootstrap select  -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
-            rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
-    
-    
         <!-- fancybox  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
             integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
@@ -124,15 +117,15 @@
 
                                 </ul>
                             </div>
-                            <div class="language"><select class="selectpicker" data-width="fit">
-                                    <option data-content='<span class="flag-icon flag-icon-az"></span> '>
-                                        Azəerbaycan
-                                    </option>
-                                    <option data-content='<span class="flag-icon flag-icon-rs"></span> '>Rus
-                                    </option>
-                                    <option data-content='<span class="flag-icon flag-icon-us"></span> '>EN
-                                    </option>
-                                </select></div>
+                            <div class="lang">
+                                <div class="box">
+                                    <span>Az<i class="fa-solid fa-caret-up"></i></span>
+                                    <ul class="lang-list">
+                                        <li><a href="">En</a></li>
+                                        <li><a href="">Ru</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
                             <form class="example" id="form" action="" style="display: block;">
                                 <input type="text" placeholder="Axtar.." name="search">
@@ -147,32 +140,23 @@
                             <ul id="menu">
 
                        
-                                <li class="main"><a class="navlink" href="About.html">Haqqımızda</a></li>
-                                <li class="main"><a class="navlink" href="Car.html">Avtomobilərimiz</a></li>
-                                <li class="main"><a class="navlink" href="blogs.html">Bloglar</a></li>
-                                <li class="main"><a class="navlink" href="services.html">Xidmətlər</a></li>
-                                <li class="main"><a class="navlink" href="galariy.html">Galleriya</a></li>
-                                <li class="main"><a class="navlink" href="contact.html">Əlaqə</a></li>
+                                 
+                                <li onclick="setActiveTab(0)" class="main navigation-item"><a class="navlink" href="About.html">Haqqımızda</a></li>
+                                <li onclick="setActiveTab(1)"  class="main navigation-item"><a class="navlink" href="Car.html">Avtomobillərimiz</a></li>
+                                <li onclick="setActiveTab(2)" class="main navigation-item"><a class="navlink" href="blogs.html">Bloglar</a></li>
+                                <li onclick="setActiveTab(3)" class="main navigation-item"><a class="navlink" href="services.html">Xidmətlər</a></li>
+                                <li onclick="setActiveTab(4)" class="main navigation-item"><a class="navlink" href="galariy.html">Qalereya</a></li>
+                                <li onclick="setActiveTab(5)" class="main navigation-item"><a class="navlink" href="contact.html">Əlaqə</a></li>
+
 
 
                                 <div class="currency">
-                                    <div class="wrapper">
-                                        <form class="form-inline">
-
-                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                <div class="input-group-addon currency-symbol">$</div>
-
-                                                <div class="input-group-addon currency-addon">
-
-                                                    <select class="currency-selector">
-                                                        <option data-symbol="₼" selected>AZN</option>
-                                                        <option data-symbol="$">USD</option>
-                                                        <option data-symbol="€">EUR</option>
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <div class="box">
+                                        <span>AZN<i class="fa-solid fa-caret-up"></i></span>
+                                        <ul class="currency-list">
+                                            <li><a href="">USD</a></li>
+                                            <li><a href="">EUR</a></li>
+                                        </ul>
                                     </div>
 
 
@@ -204,19 +188,14 @@
                 </div>
                 <div class="menu-items">
                     <div class="mobilemenu-div">
-                        <div class="language"><select class="selectpicker" data-width="fit">
-                                <option data-content='<span class="flag-icon flag-icon-az"></span> '>
-                                    Azəerbaycan
-                                </option>
-                                <option data-content='<span class="flag-icon flag-icon-rs"></span> '>Rus
-                                </option>
-                                <option data-content='<span class="flag-icon flag-icon-us"></span> '>EN
-                                </option>
-                            </select></div>
-                        <div class="currency">
-
-
-
+                        <div class="lang">
+                            <div class="box">
+                                <span>Az<i class="fa-solid fa-caret-up"></i></span>
+                                <ul class="lang-list">
+                                    <li><a href="">En</a></li>
+                                    <li><a href="">Ru</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <li>
@@ -224,19 +203,22 @@
                             <input type="text" placeholder="Axtar.." name="search">
                     </li>
                     <li class=""><a href="About.html">Haqqımızda</a></li>
-                    <li class=""><a href="Car.html">Avtomobilərimiz</a></li>
+                    <li class=""><a href="Car.html">Avtomobillərimiz</a></li>
                     <li class=""><a href="blogs.html">Bloglar</a></li>
                     <li class=""><a href="services.html">Xidmətlər</a></li>
-                    <li class=""><a href="galariy.html">Galleriya</a></li>
+                    <li class=""><a href="galariy.html">Qalereya</a></li>
                     <li class=""><a href="contact.html">Əlaqə</a></li>
-                    <li><select style="height: 30px;
-                        border: none;
-                        background-image: none !important;
-                        outline: none;" >
-                            <option data-symbol="₼" selected> AZN(Azerbaijan Manat) </option>
-                            <option data-symbol="$">USD(US Dollar)</option>
-                            <option data-symbol="€">EUR</option>
-                        </select></li>
+                    <li> <div class="currency">
+                        <div class="box">
+                            <span>AZN<i class="fa-solid fa-caret-up"></i></span>
+                            <ul class="currency-list">
+                                <li><a href="">USD</a></li>
+                                <li><a href="">EUR</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div></li>
 
                 </div>
             </div>
@@ -315,12 +297,15 @@
 
                             <ul>
                                 <h4>Menyular</h4>
-                                <li><a href="About.html">Haqqımızda</a></li>
-                                <li ><a href="Car.html">Avtomobilərimiz</a></li>
-                                <li ><a href="blogs.html">Bloglar</a></li>
-                                <li ><a href="services.html">Xidmətlər</a></li>
-                                <li><a href="galariy.html">Galleriya</a></li>
-                                <li ><a href="contact.html">Əlaqə</a></li>
+                                  
+                                <li onclick="setActiveTab(0)" class=" navigation-item"><a class="navlink" href="About.html">Haqqımızda</a></li>
+                                <li onclick="setActiveTab(1)"  class=" navigation-item"><a class="navlink" href="Car.html">Avtomobillərimiz</a></li>
+                                <li onclick="setActiveTab(2)" class=" navigation-item"><a class="navlink" href="blogs.html">Bloglar</a></li>
+                                <li onclick="setActiveTab(3)" class=" navigation-item"><a class="navlink" href="services.html">Xidmətlər</a></li>
+                                <li onclick="setActiveTab(4)" class=" navigation-item"><a class="navlink" href="galariy.html">Qalereya</a></li>
+                                <li onclick="setActiveTab(5)" class=" navigation-item"><a class="navlink" href="contact.html">Əlaqə</a></li>
+
+
 
                             </ul>
                         </div>
@@ -330,7 +315,7 @@
 
                             <ul>
                                 <h4>Faydalı Linklər</h4>
-                                <li><a href="Rulesandregulations.html">Tez-tez soruşulanlar</a></li>
+                                <li><a href="Frequentlyaskedquestions.html">Tez-tez soruşulanlar</a></li>
                                 <li><a href="kariyer.html">Karyera</a></li>
                                 <li><a href="branch.html">Xidmət şəbəkəsi</a></li>
                             </ul>
@@ -380,10 +365,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
 integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- bootstrap select  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- bootstrap   -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 crossorigin="anonymous"></script>

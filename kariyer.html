@@ -25,12 +25,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- bootstrap select  -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css"
-        rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" />
-
 
     <!-- fancybox  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
@@ -47,7 +41,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-        
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
@@ -134,16 +128,12 @@
 
                                 </ul>
                             </div>
-                            <div class="language"><select class="selectpicker" data-width="fit">
-                                    <option data-content='<span class="flag-icon flag-icon-az"></span> '>
-                                        Azəerbaycan
-                                    </option>
-                                    <option data-content='<span class="flag-icon flag-icon-rs"></span> '>Rus
-                                    </option>
-                                    <option data-content='<span class="flag-icon flag-icon-us"></span> '>EN
-                                    </option>
-                                </select></div>
-
+                            <div class="lang"> <span>Az<i class="fa-solid fa-caret-up"></i></span>
+                                <ul class="lang-list">
+                                    <li><a href="">En</a></li>
+                                    <li><a href="">Ru</a></li>
+                                </ul>
+                            </div>
                             <form class="example" id="form" action="" style="display: block;">
                                 <input type="text" placeholder="Axtar.." name="search">
 
@@ -156,34 +146,25 @@
 
                             <ul id="menu">
 
-                            
-                                <li class="main"><a class="navlink" href="About.html">Haqqımızda</a></li>
-                                <li class="main"><a class="navlink" href="Car.html">Avtomobilərimiz</a></li>
-                                <li class="main"><a class="navlink" href="blogs.html">Bloglar</a></li>
-                                <li class="main"><a class="navlink" href="services.html">Xidmətlər</a></li>
-                                <li class="main"><a class="navlink" href="galariy.html">Galleriya</a></li>
-                                <li class="main"><a class="navlink" href="contact.html">Əlaqə</a></li>
+     
+                                <li onclick="setActiveTab(0)" class="main navigation-item"><a class="navlink" href="About.html">Haqqımızda</a></li>
+                                <li onclick="setActiveTab(1)"  class="main navigation-item"><a class="navlink" href="Car.html">Avtomobilərimiz</a></li>
+                                <li onclick="setActiveTab(2)" class="main navigation-item"><a class="navlink" href="blogs.html">Bloglar</a></li>
+                                <li onclick="setActiveTab(3)" class="main navigation-item"><a class="navlink" href="services.html">Xidmətlər</a></li>
+                                <li onclick="setActiveTab(4)" class="main navigation-item"><a class="navlink" href="galariy.html">Qalereya</a></li>
+                                <li onclick="setActiveTab(5)" class="main navigation-item"><a class="navlink" href="contact.html">Əlaqə</a></li>
+
+
 
                                 <div class="currency">
-                                    <div class="wrapper">
-                                        <form class="form-inline">
-
-                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                                <div class="input-group-addon currency-symbol">$</div>
-
-                                                <div class="input-group-addon currency-addon">
-
-                                                    <select class="currency-selector">
-                                                        <option data-symbol="₼" selected>AZN</option>
-                                                        <option data-symbol="$">USD</option>
-                                                        <option data-symbol="€">EUR</option>
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <div class="box">
+                                     <span>AZN<i class="fa-solid fa-caret-up"></i></span>
+                                        <ul class="currency-list">
+                                            <li><a href="">USD</a></li>
+                                            <li><a href="">EUR</a></li>
+                                        </ul>
                                     </div>
-
+                                    </div>
 
                                 </div>
 
@@ -198,12 +179,12 @@
     </nav>
 
 
- 
+
 
     <section id="career" class="career">
         <div class="container">
             <div class="header-text">
-                <h2>KARİYER</h2>
+                <h2>KARİYERA</h2>
                 <p>Lorem ipsum dolor sit amet elit.</p>
             </div>
             <div class="tab row">
@@ -237,7 +218,8 @@
                                         yeniliklərə həvəsli, fərqli düşüncə və ideyalara sahib gəncləri komandamıza
                                         dəvət
                                         edirik!</p>
-                                    <a href="aboutbusiness.html" class="btn ">Daha ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="aboutbusiness.html" class="btn ">Daha ətraflı <i
+                                            class="fa-solid fa-arrow-right"></i>
                                         <div></div>
                                     </a>
                                 </div>
@@ -255,7 +237,8 @@
                                         yeniliklərə həvəsli, fərqli düşüncə və ideyalara sahib gəncləri komandamıza
                                         dəvət
                                         edirik!</p>
-                                    <a href="aboutbusiness.html" class="btn ">Daha ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="aboutbusiness.html" class="btn ">Daha ətraflı <i
+                                            class="fa-solid fa-arrow-right"></i>
                                         <div></div>
                                     </a>
                                 </div>
@@ -273,7 +256,8 @@
                                         yeniliklərə həvəsli, fərqli düşüncə və ideyalara sahib gəncləri komandamıza
                                         dəvət
                                         edirik!</p>
-                                    <a href="aboutbusiness.html" class="btn ">Daha ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                    <a href="aboutbusiness.html" class="btn ">Daha ətraflı <i
+                                            class="fa-solid fa-arrow-right"></i>
                                         <div></div>
                                     </a>
                                 </div>
@@ -290,57 +274,65 @@
 
             <div id="application" class="tabcontent">
                 <form action="" id="career-form" method="POST" class="form-general" enctype="multipart/form-data">
-                    <input type="hidden" name="_token" value="">                            <div class="row">
+                    <input type="hidden" name="_token" value="">
+                    <div class="row">
                         <div class="col-lg-6">
                             <div class="form-floating">
-                                <input name="name" type="text" class="form-control" id="user-name" placeholder="Ad *" required="">
+                                <input name="name" type="text" class="form-control" id="user-name" placeholder="Ad *"
+                                    required="">
                                 <label for="user-name">Ad *</label>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-floating">
-                                <input name="username" type="text" class="form-control" id="user-surname" placeholder="Soyad" required="">
+                                <input name="username" type="text" class="form-control" id="user-surname"
+                                    placeholder="Soyad" required="">
                                 <label for="user-surname">Soyad *</label>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-floating">
-                                <input name="email" type="email" class="form-control" id="user-email" placeholder="name@example.com" required="">
+                                <input name="email" type="email" class="form-control" id="user-email"
+                                    placeholder="name@example.com" required="">
                                 <label for="user-email">E-poçt *</label>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-floating">
-                                <input name="phone" type="text" class="form-control" id="user-tel" placeholder="Telefon">
+                                <input name="phone" type="text" class="form-control" id="user-tel"
+                                    placeholder="Telefon">
                                 <label for="user-tel">Telefon</label>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="file-input">
-                                 <label for="user-file"> CV *<img src="" alt=""></label>
-                                <input name="file" type="file" accept="application/pdf, application/msword" required="" class="form-control" id="user-file" placeholder="CV">
-                               
+                                <label for="user-file"> CV *<img src="" alt=""></label>
+                                <input name="file" type="file" accept="application/pdf, application/msword" required=""
+                                    class="form-control" id="user-file" placeholder="CV">
+
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-floating">
-                                <select name="position" class="form-select" id="floatingSelect" aria-label="Floating label select" required="">
+                                <select name="position" class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select" required="">
                                     <option disabled="" selected=""></option>
-                                                                                                                                        <option value="9">Dizayner</option>
-                                                                                                                            </select>
+                                    <option value="9">Dizayner</option>
+                                </select>
                                 <label for="floatingSelect">Müraciət etmək istədiyiniz vəzifə *</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea name="note" class="form-control" placeholder="Əlavə qeydləriniz" id="user-message"></textarea>
+                                <textarea name="note" class="form-control" placeholder="Əlavə qeydləriniz"
+                                    id="user-message"></textarea>
                                 <label for="user-message">Əlavə qeydləriniz</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-bottom">
                         <div class="form-check">
-                            <p><strong>Qeyd:</strong> * işarəsi ilə qeyd olunmuş xanaları doldurmaq mütləqdir 
+                            <p><strong>Qeyd:</strong> * işarəsi ilə qeyd olunmuş xanaları doldurmaq mütləqdir
                             </p>
                         </div>
                     </div>
@@ -372,39 +364,36 @@
                 </div>
                 <div class="menu-items">
                     <div class="mobilemenu-div">
-                        <div class="language"><select class="selectpicker" data-width="fit">
-                                <option data-content='<span class="flag-icon flag-icon-az"></span> '>
-                                    Azəerbaycan
-                                </option>
-                                <option data-content='<span class="flag-icon flag-icon-rs"></span> '>Rus
-                                </option>
-                                <option data-content='<span class="flag-icon flag-icon-us"></span> '>EN
-                                </option>
-                            </select></div>
-                        <div class="currency">
-
-
-
+                        <div class="lang"> <span>Az<i class="fa-solid fa-caret-up"></i></span>
+                            <ul class="lang-list">
+                                <li><a href="">En</a></li>
+                                <li><a href="">Ru</a></li>
+                            </ul>
                         </div>
+                    
                     </div>
                     <li>
                         <form class="example" id="form" action="" style="display: block;">
                             <input type="text" placeholder="Axtar.." name="search">
                     </li>
                     <li class=""><a href="About.html">Haqqımızda</a></li>
-                    <li class=""><a href="Car.html">Avtomobilərimiz</a></li>
+                    <li class=""><a href="Car.html">Avtomobillərimiz</a></li>
                     <li class=""><a href="blogs.html">Bloglar</a></li>
                     <li class=""><a href="services.html">Xidmətlər</a></li>
-                    <li class=""><a href="galariy.html">Galleriya</a></li>
+                    <li class=""><a href="galariy.html">Qalereya</a></li>
                     <li class=""><a href="contact.html">Əlaqə</a></li>
-                    <li><select style="height: 30px;
-                        border: none;
-                        background-image: none !important;
-                        outline: none;" >
-                            <option data-symbol="₼" selected> AZN(Azerbaijan Manat) </option>
-                            <option data-symbol="$">USD(US Dollar)</option>
-                            <option data-symbol="€">EUR</option>
-                        </select></li>
+                    <li> <div class="currency">
+                        <div class="box">
+                         <span>AZN<i class="fa-solid fa-caret-up"></i></span>
+                            <ul class="currency-list">
+                                <li><a href="">USD</a></li>
+                                <li><a href="">EUR</a></li>
+                            </ul>
+                        </div>
+                        </div>
+
+                    </div>
+</li>
 
                 </div>
             </div>
@@ -442,12 +431,15 @@
 
                             <ul>
                                 <h4>Menyular</h4>
-                                <li><a href="About.html">Haqqımızda</a></li>
-                                <li ><a href="Car.html">Avtomobilərimiz</a></li>
-                                <li ><a href="blogs.html">Bloglar</a></li>
-                                <li ><a href="services.html">Xidmətlər</a></li>
-                                <li><a href="galariy.html">Galleriya</a></li>
-                                <li ><a href="contact.html">Əlaqə</a></li>
+                                   
+                                <li onclick="setActiveTab(0)" class=" navigation-item"><a class="navlink" href="About.html">Haqqımızda</a></li>
+                                <li onclick="setActiveTab(1)"  class=" navigation-item"><a class="navlink" href="Car.html">Avtomobillərimiz</a></li>
+                                <li onclick="setActiveTab(2)" class=" navigation-item"><a class="navlink" href="blogs.html">Bloglar</a></li>
+                                <li onclick="setActiveTab(3)" class=" navigation-item"><a class="navlink" href="services.html">Xidmətlər</a></li>
+                                <li onclick="setActiveTab(4)" class=" navigation-item"><a class="navlink" href="galariy.html">Qalereya</a></li>
+                                <li onclick="setActiveTab(5)" class=" navigation-item"><a class="navlink" href="contact.html">Əlaqə</a></li>
+
+
 
                             </ul>
                         </div>
@@ -457,7 +449,7 @@
 
                             <ul>
                                 <h4>Faydalı Linklər</h4>
-                                <li><a href="Rulesandregulations.html">Tez-tez soruşulanlar</a></li>
+                                <li><a href="Frequentlyaskedquestions.html">Tez-tez soruşulanlar</a></li>
                                 <li><a href="kariyer.html">Karyera</a></li>
                                 <li><a href="branch.html">Xidmət şəbəkəsi</a></li>
                             </ul>
@@ -492,62 +484,61 @@
         </div>
     </footer>
 
-<script>
-    function openbox(evt, careerName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(careerName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-           
-     document.getElementById("defaultOpen").click();</script>
+    <script>
+        function openbox(evt, careerName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(careerName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();</script>
     <!-- goupstairs JS -->
     <div id="goupstairs" title="go upstairs" style="display: block;"><a href="#goupstairs"><i
                 class="fa-solid fa-arrow-up"></i></a> </div>
 
-<!-- phone JS -->
-<div id="phone"  style="display: block;"><a href="tel:(+994 12) 444 44 44"><i class="fa-solid fa-phone"></i></a> </div>
-<!-- query JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- phone JS -->
+    <div id="phone" style="display: block;"><a href="tel:(+994 12) 444 44 44"><i class="fa-solid fa-phone"></i></a>
+    </div>
+    <!-- query JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- Fontawesome  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
-integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- bootstrap select  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-crossorigin="anonymous"></script>
-<!-- ower carsel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Fontawesome  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap select  -->
 
-<!-- Owl carousel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<!-- js-docment -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- js-docment -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- ower carsel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="doc-js/doc.js"></script>
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- js-docment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js-docment -->
+
+    <script src="doc-js/doc.js"></script>
 </body>
 
 </html>
